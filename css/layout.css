@@ -24,4 +24,30 @@
 
 /* Positioning Classes */
 
+div.row {
+  margin-bottom: 2%;
+  overflow: auto;
+}
 
+div.row:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.col-1 {
+  width: 32%;;
+}
+
+.col-2 {
+  width: 66%;
+}
+
+[class*='col-'] {
+  float: left;
+  margin-right: 2%;
+}
+
+[class*='col-']:last-child {
+  margin-right: 0;
+}
